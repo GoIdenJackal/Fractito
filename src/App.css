@@ -1,8 +1,44 @@
-#mainTitle{
-  margin: 20px;
+#container{
+  display: flex;
+  justify-items: flex-start;
+  margin: 30px;
 }
 
 #canvas{
-  margin: 20px;
+  margin: 30px;
   border: 1px solid black;
+}
+
+#mousePosition{
+  margin: 50px;
+}
+
+#clearButton{
+  margin: 50px;
+  height: 50px;
+  width: 70px
+}
+
+body{
+  background-color: ;
+  width: 1000px;
+}
+
+#colourSelector{
+  text-decoration: none;
+  width: 100px;
+  -webkit-appearance: none; /* remove default appearance */
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent; /* make background transparent */
+  color: inherit; /* inherit font color from parent element */
+}
+
+select:focus {
+  outline: none; /* remove outline on focus */
+}
+
+option:checked {
+  background-color: inherit; /* make background color of selected option the same as its parent element */
+  color: inherit; /* make font color of selected option the same as its parent element */
 }
