@@ -7,30 +7,30 @@
 
     <title>Fractito</title>
   </head>
-  <body>
-    <h1 id="mainTitle">Fractito</h1>
-    <h2 id="mousePosition"></h2>    
-    <div id="container">        
-      <div id="buttonContainer">
+  <body>    
+    <h1 id="mainTitle">Sweet oh so sweet drawing thing wooo.</h1>
+    <div id="buttonContainer">      
+      <button id="drawRectangleButton">Rectangle</button>
+      <button id="drawLineButton">Line</button>
+      <button id="drawCircleButton">Circle</button>
+      <button id="drawPointButton">Point</button>
+      <button id="clearButton">Clear</button>      
+    </div>    
+    <div id="canvasContainer">          
+      <div id="canvasInfoWrapper">
         <div id="colourPicker"></div>
-        <button id="clearButton">Clear</button>
-        <button id="drawRectangleButton">Rectangle</button>
-        <button id="drawLineButton">Line</button>
-        <button id="drawCircleButton">Circle</button>
-        <button id="drawPointButton">Point</button>
-      </div>
+        <h3 id="canvasDimensions"></h3>
+        <h2 id="mousePosition"></h2>  
+        <h3 id="currentToolSelected"></h3>        
+      </div>      
+      <canvas id="canvas" width="0" height="0"></canvas>
       <div id="textBoxContainer">
-        <h1>Start X: </h1>
-        <input id="inputStartX">
-        <h1>Start Y: </h1>
-        <input id="inputStartY">
-        <h1>End X: </h1>
-        <input id="inputEndX">
-        <h1>End Y: </h1>
-        <input id="inputEndY">
+      <h1 id="lineWidthText">Line Width</h1>
+      <input type="number" id="lineWidth">
       </div>       
-      <div id="root"></div>    
     </div>
-    <canvas id="canvas" width="0" height="0"></canvas>
+    <div id="root"></div>    
+   
+    
   </body>
 </html>
